@@ -4,5 +4,22 @@
 -moz-box-sizing:border-box } 
 body { padding:0; margin:0;}
 .header { background:rgb(189, 15, 81); color:white; padding:60px; text-align:center;} 
-.navbar { background: rgba(10, 6, 41, 0.897); color:white; } 
 
+.navbar { background:rgb(9, 12, 39); 
+    display:flex; } 
+
+.navbar a { color:white;
+     padding:14px 20px ;
+      text-align:center ;
+       text-decoration:none;} 
+
+a:hover { background:rgb(207, 207, 221);  color:black;} 
+.row { display:flex; flex-wrap:wrap; }
+.side { background:rgb(231, 241, 243); flex:30%;  } 
+ .fakeimg { background:#ccc; padding:20px; width:100%;}
+.main { flex:70%; }
+.side, .main {padding:20px; } 
+.footer { background:rgb(230, 235, 236); padding:16px; text-align:center;} 
+@media screen and (max-width:700px) { 
+    .navbar, .row { flex-direction:column;}
+}
